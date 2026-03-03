@@ -251,7 +251,7 @@ function Photos() {
             key={image.src}
             className={clsx(
               'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
+              rotations[imageIndex % rotations.length]
             )}
           >
             <div className="aspect-9/10">
@@ -270,7 +270,7 @@ function Photos() {
 }
 
 export default async function Home() {
-//  let articles = (await getAllArticles()).slice(0, 4)
+  //  let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
@@ -280,7 +280,13 @@ export default async function Home() {
             Cloud Support Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a Toronto-based IT professional with over five years of experience providing technical support across cloud and end-user environments. Currently working as a Cloud Support Engineer at ExamPro. I bring a customer-first mindset to every interaction. Whether I'm troubleshooting a tricky authentication issue or translating complex technical concepts for a non-technical user, I'm driven by the satisfaction of solving problems quickly and clearly.
+            I'm a Toronto-based IT professional with over five years of
+            experience providing technical support across cloud and end-user
+            environments. Currently working as a Cloud Support Engineer at
+            ExamPro. I bring a customer-first mindset to every interaction.
+            Whether I'm troubleshooting a tricky authentication issue or
+            translating complex technical concepts for a non-technical user, I'm
+            driven by the satisfaction of solving problems quickly and clearly.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
@@ -303,7 +309,7 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-{/*
+      {/*
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
