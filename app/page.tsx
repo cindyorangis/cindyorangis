@@ -20,7 +20,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-// import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
+import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -82,7 +82,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-/* function Article({ article }: { article: ArticleWithSlug }) {
+function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <Card as="article">
       <Card.Title href={`/articles/${article.slug}`}>
@@ -95,7 +95,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )
-} */
+}
 
 function SocialLink({
   icon: Icon,
@@ -270,7 +270,7 @@ function Photos() {
 }
 
 export default async function Home() {
-  //  let articles = (await getAllArticles()).slice(0, 4)
+  let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
@@ -309,7 +309,6 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      {/*
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -323,8 +322,6 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-
-*/}
     </>
   )
 }
