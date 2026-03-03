@@ -277,13 +277,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            Cloud Support Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I'm a Toronto-based IT professional with over five years of experience providing technical support across cloud and end-user environments. Currently working as a Cloud Support Engineer at ExamPro. I bring a customer-first mindset to every interaction. Whether I'm troubleshooting a tricky authentication issue or translating complex technical concepts for a non-technical user, I'm driven by the satisfaction of solving problems quickly and clearly.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
