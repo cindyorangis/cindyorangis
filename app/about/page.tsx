@@ -50,7 +50,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'Cindy Orangis | Cloud Support Engineer',
 }
 
 export default function About() {
@@ -69,35 +69,20 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I'm Cindy Orangis. I live in Toronto, where I help people navigate technology with confidence.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+I've been drawn to computers for as long as I can remember. Growing up, there was nothing more satisfying than figuring out how something worked — taking it apart, understanding it, and putting it back together better than before. That curiosity led me to study Computer Programming and Analysis at Seneca Polytechnic, where I built a foundation that's shaped everything I've done since.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+The thing I loved most wasn't just the technology itself — it was the moment when a frustrated person became a relieved one. When I landed my first support role, I realized I'd found my calling: being the person who shows up calmly when everything feels broken, and leaves with the problem solved.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+I went deep on cloud technology, earning AWS certifications and an Azure credential, and spent years at ExamPro handling everything from complex authentication issues to connectivity crises — 30+ tickets a day, in a fast-paced environment where clarity and speed both matter.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+Today, I'm focused on bringing that same energy to a larger stage. I believe great IT support isn't just about fixing tickets — it's about building trust, reducing friction, and making technology work for the people who depend on it every day.
             </p>
           </div>
         </div>
@@ -116,11 +101,11 @@ export default function About() {
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:cindyorangis@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              cindyorangis@gmail.com
             </SocialLink>
           </ul>
         </div>
