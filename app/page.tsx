@@ -139,6 +139,72 @@ function Role({ role }: { role: Role }) {
   )
 }
 
+function Certificate() {
+  const certificates = [
+    {
+      name: 'Microsoft Certified: Azure Fundamentals',
+      link: 'https://learn.microsoft.com/en-us/users/cindyorangis/credentials/3cd50a0db27a48cd',
+      issued: 'February 2026',
+      imageUrl:
+        'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+    },
+    {
+      name: 'AWS Certified Developer Associate',
+      link: 'https://www.credly.com/badges/6ba4c09e-10f8-4bd4-9510-051d3233a454',
+      issued: 'November 2020',
+      imageUrl:
+        'https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png',
+    },
+    {
+      name: 'AWS Certified Cloud Practitioner',
+      link: 'https://www.credly.com/badges/42f51b32-bbe9-4781-bdb4-ca664a41a2b3',
+      issued: 'July 2020',
+      imageUrl:
+        'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
+    },
+  ]
+
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <MailIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Certificates</span>
+      </h2>
+      <ol className="mt-6 space-y-4">
+        {certificates.map((certificate) => (
+          <li
+            key={certificate.link}
+            className="relative flex items-center space-x-3 rounded-lg border border-zinc-300 bg-white px-6 py-5 shadow-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-zinc-600 hover:border-zinc-400 hover:bg-zinc-50 dark:border-white/10 dark:bg-zinc-800/50 dark:shadow-none dark:focus-within:outline-zinc-500 dark:hover:border-white/25 dark:hover:bg-zinc-700/50"
+          >
+            <div className="shrink-0">
+              <img
+                alt=""
+                src={certificate.imageUrl}
+                className="size-10 rounded-full bg-zinc-300 outline outline-1 -outline-offset-1 outline-black/5 dark:bg-zinc-700 dark:outline-white/10"
+              />
+            </div>
+            <div className="min-w-0 flex-1">
+              <a
+                href={certificate.link}
+                target="_blank"
+                className="focus:outline-none"
+              >
+                <span aria-hidden="true" className="absolute inset-0" />
+                <p className="text-sm font-medium text-gray-900 dark:text-white">
+                  {certificate.name}
+                </p>
+                <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                  {certificate.issued}
+                </p>
+              </a>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
 function Resume() {
   let resume: Array<Role> = [
     {
@@ -223,30 +289,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  const certificates = [
-    {
-      name: 'Microsoft Certified: Azure Fundamentals',
-      link: 'https://learn.microsoft.com/en-us/users/cindyorangis/credentials/3cd50a0db27a48cd',
-      issued: 'February 2026',
-      imageUrl:
-        'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
-    },
-    {
-      name: 'AWS Certified Developer Associate',
-      link: 'https://www.credly.com/badges/6ba4c09e-10f8-4bd4-9510-051d3233a454',
-      issued: 'November 2020',
-      imageUrl:
-        'https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png',
-    },
-    {
-      name: 'AWS Certified Cloud Practitioner',
-      link: 'https://www.credly.com/badges/42f51b32-bbe9-4781-bdb4-ca664a41a2b3',
-      issued: 'July 2020',
-      imageUrl:
-        'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
-    },
-  ]
-
   return (
     <>
       <Container className="mt-9">
@@ -264,19 +306,13 @@ export default async function Home() {
             driven by the satisfaction of solving problems quickly and clearly.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="#"
+              href="https://github.com/cindyorangis"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/cindyorangis"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -287,31 +323,7 @@ export default async function Home() {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-4">
-            {certificates.map((certificate) => (
-              <div
-                key={certificate.link}
-                className="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-indigo-600 hover:border-gray-400 dark:border-white/10 dark:bg-gray-800/50 dark:shadow-none dark:focus-within:outline-indigo-500 dark:hover:border-white/25"
-              >
-                <div className="shrink-0">
-                  <img
-                    alt=""
-                    src={certificate.imageUrl}
-                    className="size-10 rounded-full bg-gray-300 outline outline-1 -outline-offset-1 outline-black/5 dark:bg-gray-700 dark:outline-white/10"
-                  />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <a href="#" className="focus:outline-none">
-                    <span aria-hidden="true" className="absolute inset-0" />
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">
-                      {certificate.name}
-                    </p>
-                    <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                      {certificate.issued}
-                    </p>
-                  </a>
-                </div>
-              </div>
-            ))}
+            <Certificate />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />

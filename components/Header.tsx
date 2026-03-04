@@ -86,7 +86,12 @@ function MobileNavItem({
 }) {
   return (
     <li>
-      <PopoverButton as={Link} href={href} className="block py-2">
+      <PopoverButton
+        as={Link}
+        href={href}
+        target="_blank"
+        className="block py-2"
+      >
         {children}
       </PopoverButton>
     </li>
@@ -147,6 +152,7 @@ function NavItem({
     <li>
       <Link
         href={href}
+        target="_blank"
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
