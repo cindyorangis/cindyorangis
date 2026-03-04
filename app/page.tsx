@@ -142,35 +142,35 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'ExamPro Training Inc.',
+      title: 'Cloud Support Engineer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: 'Aug 2020',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Elections Canada',
+      title: 'Deputy Returning Officer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: 'April 2025',
+      end: 'April 2025',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Elections Ontario',
+      title: 'Deputy Returning Officer (Tech)',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: 'February 2025',
+      end: 'February 2025',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: "TJ's Towing",
+      title: 'Web Developer',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: 'October 2019',
+      end: 'May 2020',
     },
   ]
 
@@ -223,6 +223,30 @@ function Photos() {
 }
 
 export default async function Home() {
+  const certificates = [
+    {
+      name: 'Microsoft Certified: Azure Fundamentals',
+      link: 'https://learn.microsoft.com/en-us/users/cindyorangis/credentials/3cd50a0db27a48cd',
+      issued: 'February 2026',
+      imageUrl:
+        'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+    },
+    {
+      name: 'AWS Certified Developer Associate',
+      link: 'https://www.credly.com/badges/6ba4c09e-10f8-4bd4-9510-051d3233a454',
+      issued: 'November 2020',
+      imageUrl:
+        'https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png',
+    },
+    {
+      name: 'AWS Certified Cloud Practitioner',
+      link: 'https://www.credly.com/badges/42f51b32-bbe9-4781-bdb4-ca664a41a2b3',
+      issued: 'July 2020',
+      imageUrl:
+        'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
+    },
+  ]
+
   return (
     <>
       <Container className="mt-9">
@@ -262,7 +286,33 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16"></div>
+          <div className="flex flex-col gap-4">
+            {certificates.map((certificate) => (
+              <div
+                key={certificate.link}
+                className="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-indigo-600 hover:border-gray-400 dark:border-white/10 dark:bg-gray-800/50 dark:shadow-none dark:focus-within:outline-indigo-500 dark:hover:border-white/25"
+              >
+                <div className="shrink-0">
+                  <img
+                    alt=""
+                    src={certificate.imageUrl}
+                    className="size-10 rounded-full bg-gray-300 outline outline-1 -outline-offset-1 outline-black/5 dark:bg-gray-700 dark:outline-white/10"
+                  />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <a href="#" className="focus:outline-none">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">
+                      {certificate.name}
+                    </p>
+                    <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                      {certificate.issued}
+                    </p>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
           </div>

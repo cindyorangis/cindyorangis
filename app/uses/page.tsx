@@ -47,7 +47,7 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="AMD Ryzen 7 5700G Desktop, 28GB RAM">
+          <Tool title="AMD Ryzen 7 5700G Desktop">
             A capable custom desktop that handles everything I throw at it —
             multiple remote sessions, VMs, and a dozen browser tabs of
             documentation open at once. Reliable, fast, and gets the job done
@@ -89,6 +89,23 @@ export default function Uses() {
           <Tool title="NordVPN">
             Always on when I'm outside my home network. A simple habit that goes
             a long way.
+          </Tool>
+        </ToolsSection>
+        <ToolsSection title="Gaming">
+          <Tool title="Baldur's Gate 3">
+            A deep, story-driven RPG where every choice has consequences. I play
+            co-op with friends online — there's something about collaborating
+            through a chaotic D&D-style adventure together that never gets old.
+          </Tool>
+          <Tool title="Warhammer 40k: Dawn of War">
+            A classic real-time strategy set in the grimdark 40k universe.
+            Fast-paced, tactical, and brutally satisfying when a plan comes
+            together under pressure.
+          </Tool>
+          <Tool title="Fire Emblem Fates: Conquest">
+            A tactical RPG with punishing difficulty and permanent character
+            death — every decision matters. The kind of game that teaches you to
+            think three moves ahead.
           </Tool>
         </ToolsSection>
       </div>
