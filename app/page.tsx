@@ -15,6 +15,9 @@ import image2 from '@/images/photos/yulia-matvienko-PW9UT4SUibg-unsplash.jpg'
 import image3 from '@/images/photos/marcin-skalij-u_KQbigI68g-unsplash.jpg'
 import image4 from '@/images/photos/juan-rojas-3AFI3aQxdu4-unsplash.jpg'
 import image5 from '@/images/photos/marcin-skalij-9UwoKTFOSxY-unsplash.jpg'
+import cert1 from '@/images/certs/az-900-badge.png'
+import cert2 from '@/images/certs/aws-dva-badge.png'
+import cert3 from '@/images/certs/aws-ccp-badge.png'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -140,22 +143,19 @@ function Certificate() {
       name: 'Microsoft Certified: Azure Fundamentals',
       link: 'https://learn.microsoft.com/en-us/users/cindyorangis/credentials/3cd50a0db27a48cd',
       issued: 'February 2026',
-      imageUrl:
-        'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+      imageUrl: cert1,
     },
     {
       name: 'AWS Certified Developer Associate',
       link: 'https://www.credly.com/badges/6ba4c09e-10f8-4bd4-9510-051d3233a454',
       issued: 'November 2020',
-      imageUrl:
-        'https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png',
+      imageUrl: cert2,
     },
     {
       name: 'AWS Certified Cloud Practitioner',
       link: 'https://www.credly.com/badges/42f51b32-bbe9-4781-bdb4-ca664a41a2b3',
       issued: 'July 2020',
-      imageUrl:
-        'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
+      imageUrl: cert3,
     },
   ]
 
@@ -172,9 +172,9 @@ function Certificate() {
             className="relative flex items-center space-x-3 rounded-lg border border-zinc-300 bg-white px-6 py-5 shadow-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-zinc-600 hover:border-zinc-400 hover:bg-zinc-50 dark:border-white/10 dark:bg-zinc-800/50 dark:shadow-none dark:focus-within:outline-zinc-500 dark:hover:border-white/25 dark:hover:bg-zinc-700/50"
           >
             <div className="shrink-0">
-              <img
-                alt=""
+              <Image
                 src={certificate.imageUrl}
+                alt=""
                 className="size-10 rounded-full bg-zinc-300 outline outline-1 -outline-offset-1 outline-black/5 dark:bg-zinc-700 dark:outline-white/10"
               />
             </div>
@@ -302,7 +302,6 @@ function Photos() {
               <Image
                 src={photo.src}
                 alt={photo.alt}
-                unoptimized
                 fill
                 sizes="(min-width: 640px) 18rem, 11rem"
                 className="absolute inset-0 h-full w-full object-cover"
