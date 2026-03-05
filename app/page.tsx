@@ -97,7 +97,7 @@ interface Role {
   title: string
   logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
+  end?: string | { label: string; dateTime: string }
 }
 
 function Role({ role }: { role: Role }) {
@@ -106,8 +106,16 @@ function Role({ role }: { role: Role }) {
   let startDate =
     typeof role.start === 'string' ? role.start : role.start.dateTime
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let endLabel = role.end
+    ? typeof role.end === 'string'
+      ? role.end
+      : role.end.label
+    : ''
+  let endDate = role.end
+    ? typeof role.end === 'string'
+      ? role.end
+      : role.end.dateTime
+    : ''
 
   return (
     <li className="flex gap-4">
@@ -126,11 +134,16 @@ function Role({ role }: { role: Role }) {
         <dt className="sr-only">Date</dt>
         <dd
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
+          aria-label={role.end ? `${startLabel} until ${endLabel}` : startLabel}
         >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
+          <time dateTime={startDate}>{startLabel}</time>
+          {role.end && (
+            <>
+              {' '}
+              <span aria-hidden="true">—</span>{' '}
+              <time dateTime={endDate}>{endLabel}</time>
+            </>
+          )}
         </dd>
       </dl>
     </li>
@@ -217,21 +230,12 @@ function Resume() {
       title: 'Deputy Returning Officer',
       logo: logoAirbnb,
       start: 'April 2025',
-      end: 'April 2025',
     },
     {
       company: 'Elections Ontario',
       title: 'Deputy Returning Officer (Tech)',
       logo: logoFacebook,
       start: 'February 2025',
-      end: 'February 2025',
-    },
-    {
-      company: "TJ's Towing",
-      title: 'Web Developer',
-      logo: logoStarbucks,
-      start: 'October 2019',
-      end: 'May 2020',
     },
   ]
 
@@ -246,8 +250,12 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button
+        href="https://drive.google.com/file/d/1tgoTKAdx4sSyPACk2QKouvdUpV5dAGDf/view?usp=drive_link"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>

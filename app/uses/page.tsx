@@ -97,15 +97,17 @@ export default function Uses() {
             co-op with friends online — there's something about collaborating
             through a chaotic D&D-style adventure together that never gets old.
           </Tool>
-          <Tool title="Warhammer 40k: Dawn of War">
+          <Tool
+            title="Warhammer 40k: Dawn of War"
+            href="https://www.youtube.com/playlist?list=PLjRYRtjqHHeyj7kJl7OoppZbMS4rR1ljT"
+          >
             A classic real-time strategy set in the grimdark 40k universe.
             Fast-paced, tactical, and brutally satisfying when a plan comes
             together under pressure.
           </Tool>
           <Tool title="Fire Emblem Fates: Conquest">
-            A tactical RPG with punishing difficulty and permanent character
-            death — every decision matters. The kind of game that teaches you to
-            think three moves ahead.
+            A tactical RPG with punishing difficulty — every decision matters.
+            The kind of game that teaches you to think three moves ahead.
           </Tool>
         </ToolsSection>
       </div>
