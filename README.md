@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Cindy Orangis — Personal Website
 
-## Getting Started
+My personal resume and portfolio website, built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+🔗 **Live site:** [cindyorangis.com](https://cindyorangis.com)
+
+---
+
+## 📋 About This Project
+
+This is my professional resume in website form — built to go beyond a PDF and demonstrate real technical skills alongside the work history it describes.
+
+The stack was chosen deliberately: Next.js, TypeScript, and Tailwind CSS are industry-standard tools, and building with them hands-on is more meaningful than listing them on a resume without proof.
+
+---
+
+## 🛠️ Built With
+
+- **[Next.js](https://nextjs.org/)** — React framework for fast, production-ready web apps
+- **[TypeScript](https://www.typescriptlang.org/)** — Strongly typed JavaScript for cleaner, more reliable code
+- **[Tailwind CSS](https://tailwindcss.com/)** — Utility-first CSS for responsive design
+- **[Prettier](https://prettier.io/) + [ESLint](https://eslint.org/)** — Code formatting and linting
+- **[Husky](https://typicode.github.io/husky/)** — Git hooks to enforce code quality on every commit
+- **[Vercel](https://vercel.com/)** — Deployment and hosting
+
+---
+
+## 🚀 Run Locally
 
 ```bash
+git clone https://github.com/cindyorangis/cindyorangis.git
+cd cindyorangis
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👩‍💻 About Me
 
-## Learn More
+IT Support Professional with 5+ years of experience in enterprise environments, working toward AZ-104 (Azure Administrator). This project is part of a broader technical portfolio demonstrating hands-on skills alongside certifications.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📧 cindyorangis@gmail.com
+🔗 [linkedin.com/in/cindyorangis](https://linkedin.com/in/cindyorangis)
