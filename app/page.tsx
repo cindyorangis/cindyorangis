@@ -3,13 +3,11 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/mwangi-gatheca-qlKaN7eqay8-unsplash.jpg'
 import image2 from '@/images/photos/yulia-matvienko-PW9UT4SUibg-unsplash.jpg'
 import image3 from '@/images/photos/marcin-skalij-u_KQbigI68g-unsplash.jpg'
@@ -18,7 +16,6 @@ import image5 from '@/images/photos/marcin-skalij-9UwoKTFOSxY-unsplash.jpg'
 import cert1 from '@/images/certs/az-900-badge.png'
 import cert2 from '@/images/certs/aws-dva-badge.png'
 import cert3 from '@/images/certs/aws-ccp-badge.png'
-import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -101,17 +98,17 @@ interface Role {
 }
 
 function Role({ role }: { role: Role }) {
-  let startLabel =
+  const startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
+  const startDate =
     typeof role.start === 'string' ? role.start : role.start.dateTime
 
-  let endLabel = role.end
+  const endLabel = role.end
     ? typeof role.end === 'string'
       ? role.end
       : role.end.label
     : ''
-  let endDate = role.end
+  const endDate = role.end
     ? typeof role.end === 'string'
       ? role.end
       : role.end.dateTime
@@ -214,7 +211,7 @@ function Certificate() {
 }
 
 function Resume() {
-  let resume: Array<Role> = [
+  const resume: Array<Role> = [
     {
       company: 'ExamPro Training Inc.',
       title: 'Cloud Support Engineer',
@@ -291,9 +288,17 @@ const photos = [
 ]
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const rotations = [
+    'rotate-2',
+    '-rotate-2',
+    'rotate-2',
+    'rotate-2',
+    '-rotate-2',
+  ]
 
-  let uniquePhotos = Array.from(new Map(photos.map((p) => [p.src, p])).values())
+  const uniquePhotos = Array.from(
+    new Map(photos.map((p) => [p.src, p])).values()
+  )
 
   return (
     <div className="mt-16 sm:mt-20">
@@ -331,13 +336,14 @@ export default async function Home() {
             Cloud Support Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a Toronto-based IT professional with over five years of
+            I&apos;m a Toronto-based IT professional with over five years of
             experience providing technical support across cloud and end-user
             environments. Currently working as a Cloud Support Engineer at
             ExamPro. I bring a customer-first mindset to every interaction.
-            Whether I'm troubleshooting a tricky authentication issue or
-            translating complex technical concepts for a non-technical user, I'm
-            driven by the satisfaction of solving problems quickly and clearly.
+            Whether I&apos;m troubleshooting a tricky authentication issue or
+            translating complex technical concepts for a non-technical user,
+            I&apos;m driven by the satisfaction of solving problems quickly and
+            clearly.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

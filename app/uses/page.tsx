@@ -54,14 +54,14 @@ export default function Uses() {
             without complaint.
           </Tool>
           <Tool title="Logitech G435 Headset">
-            Lightweight and wireless, which matters when you're on support calls
-            for hours. Clear audio on both ends and comfortable enough to forget
-            you're wearing it.
+            Lightweight and wireless, which matters when you&apos;re on support
+            calls for hours. Clear audio on both ends and comfortable enough to
+            forget you&apos;re wearing it.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Cloud & Development">
           <Tool title="Visual Studio Code">
-            Lightweight but powerful. Whether I'm editing scripts, writing
+            Lightweight but powerful. Whether I&apos;m editing scripts, writing
             documentation in Markdown, or poking around a config file, VS Code
             is always the first thing I open.
           </Tool>
@@ -73,7 +73,7 @@ export default function Uses() {
           <Tool title="Windows 11">
             My primary OS both at home and in the environments I support.
             Knowing it deeply means fewer surprises when something breaks on a
-            user's machine.
+            user&apos;s machine.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Security & Privacy">
@@ -87,15 +87,16 @@ export default function Uses() {
             it with anything sensitive.
           </Tool>
           <Tool title="NordVPN">
-            Always on when I'm outside my home network. A simple habit that goes
-            a long way.
+            Always on when I&apos;m outside my home network. A simple habit that
+            goes a long way.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Gaming">
           <Tool title="Baldur's Gate 3">
             A deep, story-driven RPG where every choice has consequences. I play
-            co-op with friends online — there's something about collaborating
-            through a chaotic D&D-style adventure together that never gets old.
+            co-op with friends online — there&apos;s something about
+            collaborating through a chaotic D&D-style adventure together that
+            never gets old.
           </Tool>
           <Tool
             title="Warhammer 40k: Dawn of War"

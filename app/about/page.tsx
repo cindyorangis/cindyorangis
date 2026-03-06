@@ -68,25 +68,25 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I'm Cindy Orangis. I live in Toronto, where I help people navigate
-            technology with confidence.
+            I&apos;m Cindy Orangis. I live in Toronto, where I help people
+            navigate technology with confidence.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I've been drawn to computers for as long as I can remember.
+              I&apos;ve been drawn to computers for as long as I can remember.
               Growing up, there was nothing more satisfying than figuring out
               how something worked — taking it apart, understanding it, and
               putting it back together better than before. That curiosity led me
               to study Computer Programming and Analysis at Seneca Polytechnic,
-              where I built a foundation that's shaped everything I've done
-              since.
+              where I built a foundation that&apos;s shaped everything I&apos;ve
+              done since.
             </p>
             <p>
-              The thing I loved most wasn't just the technology itself — it was
-              the moment when a frustrated person became a relieved one. When I
-              landed my first support role, I realized I'd found my calling:
-              being the person who shows up calmly when everything feels broken,
-              and leaves with the problem solved.
+              The thing I loved most wasn&apos;t just the technology itself — it
+              was the moment when a frustrated person became a relieved one.
+              When I landed my first support role, I realized I&apos;d found my
+              calling: being the person who shows up calmly when everything
+              feels broken, and leaves with the problem solved.
             </p>
             <p>
               I went deep on cloud technology, earning AWS certifications and an
@@ -96,10 +96,10 @@ export default function About() {
               both matter.
             </p>
             <p>
-              Today, I'm focused on bringing that same energy to a larger stage.
-              I believe great IT support isn't just about fixing tickets — it's
-              about building trust, reducing friction, and making technology
-              work for the people who depend on it every day.
+              Today, I&apos;m focused on bringing that same energy to a larger
+              stage. I believe great IT support isn&apos;t just about fixing
+              tickets — it&apos;s about building trust, reducing friction, and
+              making technology work for the people who depend on it every day.
             </p>
           </div>
         </div>
