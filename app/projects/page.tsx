@@ -11,16 +11,16 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'SnowPro Services',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
+      'A full-service snow removal business web application built for real operations — with a marketing site, client portal, admin dashboard, and crew portal. Architected as a Turborepo monorepo with separate Next.js apps per subdomain, deployed on Vercel.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Personal Resume Website',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
+      'My personal resume and portfolio — this site. Built from scratch with production-grade tooling including TypeScript strict mode, ESLint, Prettier, and Husky pre-commit hooks. Deployed on Vercel.',
     link: { href: '#', label: 'github.com' },
     logo: logoAnimaginary,
   },
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Things I've built and shipped."
+      intro="A selection of projects I'm proud of — from production work to personal experiments. Most are open source, so feel free to explore the code."
     >
       <ul
         role="list"

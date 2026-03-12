@@ -68,8 +68,8 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I&apos;m Cindy Orangis. I live in Toronto, where I help people
-            navigate technology with confidence.
+            I&apos;m Cindy Orangis. I live in Toronto, where I build for the
+            cloud and the web.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -78,28 +78,33 @@ export default function About() {
               how something worked — taking it apart, understanding it, and
               putting it back together better than before. That curiosity led me
               to study Computer Programming and Analysis at Seneca Polytechnic,
-              where I built a foundation that&apos;s shaped everything I&apos;ve
-              done since.
+              where I built the foundation that shapes everything I do today.
             </p>
             <p>
-              The thing I loved most wasn&apos;t just the technology itself — it
-              was the moment when a frustrated person became a relieved one.
-              When I landed my first support role, I realized I&apos;d found my
-              calling: being the person who shows up calmly when everything
-              feels broken, and leaves with the problem solved.
+              My career has grown across two parallel tracks that turned out to
+              be more connected than they first appeared. On one side, I went
+              deep on cloud infrastructure — earning AWS Cloud Practitioner, AWS
+              Developer Associate, and Azure Fundamentals certifications, and
+              spending years at ExamPro supporting cloud environments,
+              diagnosing complex authentication issues, and managing Azure AD
+              and Microsoft 365 at scale. On the other side, I&apos;ve been
+              building on the web — contributing to the ExamPro learning
+              platform&apos;s front end, delivering client projects in React,
+              Next.js, HTML, CSS, and WordPress, and building in public on
+              GitHub.
             </p>
             <p>
-              I went deep on cloud technology, earning AWS certifications and an
-              Azure credential, and spent years at ExamPro handling everything
-              from complex authentication issues to connectivity crises — 30+
-              tickets a day, in a fast-paced environment where clarity and speed
-              both matter.
+              What I&apos;ve come to realize is that the best engineers
+              understand both sides. Knowing how infrastructure works makes you
+              a better developer. Knowing how users experience software makes
+              you a better cloud engineer. I&apos;m building toward that
+              intersection — and I&apos;m just getting started.
             </p>
             <p>
-              Today, I&apos;m focused on bringing that same energy to a larger
-              stage. I believe great IT support isn&apos;t just about fixing
-              tickets — it&apos;s about building trust, reducing friction, and
-              making technology work for the people who depend on it every day.
+              Today I&apos;m focused on deepening my cloud development skills,
+              currently working through AZ-204 (Azure Developer Associate) and
+              building projects that live at the edge of front end and cloud
+              infrastructure.
             </p>
           </div>
         </div>

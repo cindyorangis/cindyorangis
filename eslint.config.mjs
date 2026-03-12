@@ -13,11 +13,11 @@ const eslintConfig = defineConfig([
     'build/**',
     'next-env.d.ts',
   ]),
-    {
+  {
     rules: {
-      'react-hooks/refs': 'warn'
-    }
-  }
+      'react-hooks/refs': 'warn',
+    },
+  },
 ])
 
 export default eslintConfig

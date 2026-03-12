@@ -333,17 +333,16 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Cloud Support Engineer
+            Cloud Engineer & Front End Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m a Toronto-based IT professional with over five years of
-            experience providing technical support across cloud and end-user
-            environments. Currently working as a Cloud Support Engineer at
-            ExamPro. I bring a customer-first mindset to every interaction.
-            Whether I&apos;m troubleshooting a tricky authentication issue or
-            translating complex technical concepts for a non-technical user,
-            I&apos;m driven by the satisfaction of solving problems quickly and
-            clearly.
+            I&apos;m a Toronto-based Cloud Engineer and Front End Developer with
+            5+ years of experience building and supporting cloud infrastructure
+            and production web applications. Currently at ExamPro, where I
+            contribute to a SaaS learning platform used by thousands of AWS and
+            Azure certification students. AWS Developer Associate and Azure
+            certified, with a front end stack built around Next.js, TypeScript,
+            and Tailwind CSS.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
