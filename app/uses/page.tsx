@@ -99,12 +99,15 @@ export default function Uses() {
             never gets old.
           </Tool>
           <Tool
-            title="Warhammer 40k: Dawn of War"
+            title="Warhammer 40k: Dawn of War, Winter Assault"
             href="https://www.youtube.com/playlist?list=PLjRYRtjqHHeyj7kJl7OoppZbMS4rR1ljT"
           >
-            A classic real-time strategy set in the grimdark 40k universe.
-            Fast-paced, tactical, and brutally satisfying when a plan comes
-            together under pressure.
+            The first expansion to Dawn of War, Winter Assault deepens the
+            battlefield with new units, mechanics, and the introduction of the
+            Imperial Guard. It features a dual-perspective campaign where you
+            can fight for Order or Chaos, adding replayability and narrative
+            variety. Expect larger-scale battles, more strategic depth, and even
+            more chaotic warfare.
           </Tool>
           <Tool title="Fire Emblem Fates: Conquest">
             A tactical RPG with punishing difficulty — every decision matters.

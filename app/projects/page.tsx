@@ -14,14 +14,20 @@ const projects = [
     name: 'SnowPro Services',
     description:
       'A full-service snow removal business web application built for real operations — with a marketing site, client portal, admin dashboard, and crew portal. Architected as a Turborepo monorepo with separate Next.js apps per subdomain, deployed on Vercel.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+    link: {
+      href: 'https://snowpro-one.vercel.app/',
+      label: 'snowpro-one.vercel.app',
+    },
     logo: logoPlanetaria,
   },
   {
     name: 'Personal Resume Website',
     description:
       'My personal resume and portfolio — this site. Built from scratch with production-grade tooling including TypeScript strict mode, ESLint, Prettier, and Husky pre-commit hooks. Deployed on Vercel.',
-    link: { href: '#', label: 'github.com' },
+    link: {
+      href: 'https://github.com/cindyorangis/cindyorangis',
+      label: 'github.com',
+    },
     logo: logoAnimaginary,
   },
   {
