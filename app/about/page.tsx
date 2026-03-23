@@ -68,43 +68,39 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I&apos;m Cindy Orangis. I live in Toronto, where I build for the
-            cloud and the web.
+            I&apos;m Cindy Orangis. I live in Toronto, where I build things for
+            the web and the infrastructure that runs beneath it.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I&apos;ve been drawn to computers for as long as I can remember.
-              Growing up, there was nothing more satisfying than figuring out
-              how something worked — taking it apart, understanding it, and
-              putting it back together better than before. That curiosity led me
-              to study Computer Programming and Analysis at Seneca Polytechnic,
-              where I built the foundation that shapes everything I do today.
+              It started with video games. Growing up, I was the kid who wanted
+              to know how the game worked as much as I wanted to play it — what
+              was running under the hood, how the pieces fit together, why it
+              felt the way it did. That curiosity eventually pointed me toward
+              computers, and I never really looked back. I studied Computer
+              Programming and Analysis at Seneca Polytechnic, where that
+              tinkering instinct found a proper foundation.
             </p>
             <p>
-              My career has grown across two parallel tracks that turned out to
-              be more connected than they first appeared. On one side, I went
-              deep on cloud infrastructure — earning AWS Cloud Practitioner, AWS
-              Developer Associate, and Azure Fundamentals certifications, and
-              spending years at ExamPro supporting cloud environments,
-              diagnosing complex authentication issues, and managing Azure AD
-              and Microsoft 365 at scale. On the other side, I&apos;ve been
-              building on the web — contributing to the ExamPro learning
-              platform&apos;s front end, delivering client projects in React,
-              Next.js, HTML, CSS, and WordPress, and building in public on
-              GitHub.
+              From there I went deep on cloud — earning AWS and Azure
+              credentials, and spending years in fast-moving support
+              environments where I touched everything from authentication
+              pipelines to connectivity failures. It gave me a strong intuition
+              for infrastructure: how systems talk to each other, where they
+              break, and how to build them so they don&apos;t.
             </p>
             <p>
-              What I&apos;ve come to realize is that the best engineers
-              understand both sides. Knowing how infrastructure works makes you
-              a better developer. Knowing how users experience software makes
-              you a better cloud engineer. I&apos;m building toward that
-              intersection — and I&apos;m just getting started.
+              Now I&apos;m growing in a different direction. I&apos;m currently
+              working toward my Terraform Associate 004, building out my skills
+              in infrastructure as code alongside front end development and full
+              stack projects. I&apos;m drawn to roles where the work lives
+              across the stack — where you might be writing a React component in
+              the morning and provisioning cloud resources in the afternoon.
+              That kind of breadth feels right to me.
             </p>
             <p>
-              Today I&apos;m focused on deepening my cloud development skills,
-              currently working through AZ-204 (Azure Developer Associate) and
-              building projects that live at the edge of front end and cloud
-              infrastructure.
+              I believe the best engineers understand both what users see and
+              what keeps it running. I&apos;m building toward being one of them.
             </p>
           </div>
         </div>

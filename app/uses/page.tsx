@@ -91,7 +91,7 @@ export default function Uses() {
             goes a long way.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Gaming">
+        <ToolsSection title="Games">
           <Tool title="Baldur's Gate 3">
             A deep, story-driven RPG where every choice has consequences. I play
             co-op with friends online — there&apos;s something about
@@ -112,6 +112,22 @@ export default function Uses() {
           <Tool title="Fire Emblem Fates: Conquest">
             A tactical RPG with punishing difficulty — every decision matters.
             The kind of game that teaches you to think three moves ahead.
+          </Tool>
+        </ToolsSection>
+        <ToolsSection title="Books">
+          <Tool title="The DevOps Handbook by Gene Kim, Jez Humble, Patrick Debois, John Willis">
+            A foundational read for anyone serious about DevOps. It breaks down
+            the principles behind high-performing engineering teams — fast
+            deployments, continuous delivery, and building a culture where
+            development and ops actually work together. Theory backed by
+            real-world case studies.
+          </Tool>
+          <Tool title="The Rise of Kyoshi by F.C. Yee">
+            Set centuries before the events of Avatar: The Last Airbender, this
+            novel follows Kyoshi&apos;s journey from uncertain origins to
+            becoming one of the most formidable Avatars in history. A great way
+            to revisit the world with fresh eyes — darker in tone and
+            surprisingly gripping.
           </Tool>
         </ToolsSection>
       </div>
