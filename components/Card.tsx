@@ -33,18 +33,33 @@ export function Card<T extends React.ElementType = 'div'>({
   )
 }
 
-Card.Link = function CardLink({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Link>) {
+Card.Links = function CardLinks({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50" />
-      <Link {...props}>
-        <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
-        <span className="relative z-10">{children}</span>
-      </Link>
+      <div className="relative z-10 mt-6 flex gap-4">{children}</div>
     </>
+  )
+}
+
+Card.ExternalLink = function CardExternalLink({
+  href,
+  icon: Icon,
+  children,
+}: {
+  href: string
+  icon: React.ComponentType<React.ComponentPropsWithoutRef<'svg'>>
+  children: React.ReactNode
+}) {
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-1.5 text-sm text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400"
+    >
+      <Icon className="h-4 w-4 flex-none" />
+      {children}
+    </a>
   )
 }
 
@@ -60,7 +75,7 @@ Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
 
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-      {href ? <Card.Link href={href}>{children}</Card.Link> : children}
+      {href ? <Card.Links>{children}</Card.Links> : children}
     </Component>
   )
 }

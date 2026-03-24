@@ -5,9 +5,9 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoExamPro from '@/images/logos/exampro.jpg'
+import logoElectionsCanada from '@/images/logos/elections-canada.jpg'
+import logoElectionsOntario from '@/images/logos/elections-ontario.jpg'
 import image1 from '@/images/photos/mwangi-gatheca-qlKaN7eqay8-unsplash.jpg'
 import image2 from '@/images/photos/yulia-matvienko-PW9UT4SUibg-unsplash.jpg'
 import image3 from '@/images/photos/marcin-skalij-u_KQbigI68g-unsplash.jpg'
@@ -215,7 +215,7 @@ function Resume() {
     {
       company: 'ExamPro Training Inc.',
       title: 'Cloud Support Engineer',
-      logo: logoPlanetaria,
+      logo: logoExamPro,
       start: 'Aug 2020',
       end: {
         label: 'Present',
@@ -225,13 +225,13 @@ function Resume() {
     {
       company: 'Elections Canada',
       title: 'Deputy Returning Officer',
-      logo: logoAirbnb,
+      logo: logoElectionsCanada,
       start: 'April 2025',
     },
     {
       company: 'Elections Ontario',
       title: 'Deputy Returning Officer (Tech)',
-      logo: logoFacebook,
+      logo: logoElectionsOntario,
       start: 'February 2025',
     },
   ]
