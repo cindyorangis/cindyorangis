@@ -98,10 +98,7 @@ export default function Uses() {
             collaborating through a chaotic D&D-style adventure together that
             never gets old.
           </Tool>
-          <Tool
-            title="Warhammer 40k: Dawn of War, Winter Assault"
-            href="https://www.youtube.com/playlist?list=PLjRYRtjqHHeyj7kJl7OoppZbMS4rR1ljT"
-          >
+          <Tool title="Warhammer 40k: Dawn of War, Winter Assault">
             The first expansion to Dawn of War, Winter Assault deepens the
             battlefield with new units, mechanics, and the introduction of the
             Imperial Guard. It features a dual-perspective campaign where you

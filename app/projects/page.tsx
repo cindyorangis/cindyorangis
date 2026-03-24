@@ -42,7 +42,7 @@ const projects = [
       'A self-hosted Ghost blog running on Ubuntu, set up from the command line. Features original short stories and an interactive math game — built for a Grade 4 writer.',
     link: { href: 'https://myaorangis.com/', label: 'myaorangis.com' },
     gitHubUrl: {
-      href: 'https://github.com/cindyorangis/helio-stream',
+      href: 'https://github.com/cindyorangis/myaorangis',
       label: 'github.com',
     },
     logo: logoHelioStream,
