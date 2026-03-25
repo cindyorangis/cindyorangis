@@ -192,12 +192,13 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
 
 function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
-  const otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
   const [mounted, setMounted] = useState(false)
 
   if (typeof window !== 'undefined' && !mounted) {
     setMounted(true)
   }
+
+  const otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
 
   return (
     <button
@@ -207,6 +208,7 @@ function ThemeToggle() {
       onClick={() => setTheme(otherTheme)}
     >
       <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
+
       <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition not-[@media_(prefers-color-scheme:dark)]:fill-teal-400/10 not-[@media_(prefers-color-scheme:dark)]:stroke-teal-500 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400" />
     </button>
   )

@@ -259,6 +259,46 @@ function Resume() {
   )
 }
 
+const skills = {
+  Cloud: ['AWS', 'Microsoft Azure'],
+  Frontend: [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Tailwind CSS',
+    'HTML',
+    'CSS',
+    'JavaScript',
+  ],
+  DevOps_And_Tooling: [
+    'Git',
+    'GitHub Actions (CI/CD)',
+    'Docker',
+    'Terraform (in progress)',
+    'Vercel',
+    'ESLint',
+    'Prettier',
+    'Zendesk',
+    'Jira',
+  ],
+  Operating_Systems: ['Windows 10', 'Windows 11', 'macOS', 'iOS', 'Android'],
+  Hardware_And_Devices: [
+    'PCs',
+    'Laptops',
+    'Printers',
+    'Mobile devices',
+    'AV equipment',
+    'Election technology',
+  ],
+
+  Service_Desk: [
+    'SLA management',
+    'Incident management',
+    'Escalation workflows',
+    'Knowledge base creation',
+  ],
+}
+
 const photos = [
   {
     src: image1,
@@ -366,6 +406,30 @@ export default async function Home() {
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
           </div>
+        </div>
+      </Container>
+      <Container className="mt-12 md:mt-18">
+        <h2 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-100">
+          Skills & Stack
+        </h2>
+        <div className="mt-6 space-y-4">
+          {Object.entries(skills).map(([category, items]) => (
+            <div key={category}>
+              <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-2">
+                {category}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-sm text-zinc-700 dark:text-zinc-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
       <Photos />
