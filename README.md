@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 👩‍💻 About Me
 
-IT Support Professional with 5+ years of experience in enterprise environments, working toward AZ-104 (Azure Administrator). This project is part of a broader technical portfolio demonstrating hands-on skills alongside certifications.
+Cloud Engineer and Front End Developer with 5+ years of experience building and supporting cloud infrastructure and production web applications., working toward Terraform Associate 004 certification.
 
 📧 cindyorangis@gmail.com
 🔗 [linkedin.com/in/cindyorangis](https://linkedin.com/in/cindyorangis)

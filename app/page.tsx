@@ -270,7 +270,7 @@ const skills = {
     'CSS',
     'JavaScript',
   ],
-  DevOps_And_Tooling: [
+  'DevOps And Tooling': [
     'Git',
     'GitHub Actions (CI/CD)',
     'Docker',
@@ -281,8 +281,8 @@ const skills = {
     'Zendesk',
     'Jira',
   ],
-  Operating_Systems: ['Windows 10', 'Windows 11', 'macOS', 'iOS', 'Android'],
-  Hardware_And_Devices: [
+  'Operating Systems': ['Windows 10', 'Windows 11', 'macOS', 'iOS', 'Android'],
+  'Hardware And Devices': [
     'PCs',
     'Laptops',
     'Printers',
@@ -291,7 +291,7 @@ const skills = {
     'Election technology',
   ],
 
-  Service_Desk: [
+  'Service Desk': [
     'SLA management',
     'Incident management',
     'Escalation workflows',
@@ -432,7 +432,9 @@ export default async function Home() {
           ))}
         </div>
       </Container>
-      <Photos />
+      <div className="mt-18 md:mt-24">
+        <Photos />
+      </div>
     </>
   )
 }
