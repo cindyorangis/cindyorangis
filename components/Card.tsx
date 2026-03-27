@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import clsx from 'clsx'
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {

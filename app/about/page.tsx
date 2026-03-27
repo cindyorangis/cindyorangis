@@ -102,6 +102,9 @@ export default function About() {
               I believe the best engineers understand both what users see and
               what keeps it running. I&apos;m building toward being one of them.
             </p>
+            <p>
+              Open to cloud engineer roles in Toronto — let&apos;s get in touch.
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">

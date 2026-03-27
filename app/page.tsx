@@ -1,6 +1,5 @@
 import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -213,7 +212,7 @@ function Resume() {
       logo: logoExamPro,
       start: 'Aug 2020',
       end: {
-        label: 'Present',
+        label: 'Mar 2026',
         dateTime: new Date().getFullYear().toString(),
       },
     },
@@ -255,7 +254,7 @@ function Resume() {
 }
 
 const skills = {
-  Cloud: ['AWS', 'Microsoft Azure'],
+  Cloud: ['AWS (EC2, S3, IAM, CloudFront)', 'Microsoft Azure'],
   Development: [
     'React',
     'Next.js',
@@ -264,14 +263,18 @@ const skills = {
     'HTML',
     'CSS',
     'JavaScript',
+    'Node.js',
     'Python',
   ],
+  Databases: ['MySQL', 'PostgreSQL'],
   'DevOps And Tooling': [
     'Git',
     'GitHub Actions (CI/CD)',
     'Docker',
-    'Terraform (in progress)',
+    'Terraform',
     'Vercel',
+    'Linux',
+    'Bash',
     'Zendesk',
     'Jira',
   ],

@@ -1,31 +1,48 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { StatusBadge, TagList } from '@/components/Status'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Personal Resume Website',
+    name: "Mya's Short Stories",
     description:
-      'My personal resume and portfolio — this site. Built from scratch with production-grade tooling including TypeScript strict mode, ESLint, Prettier, and Husky pre-commit hooks. Deployed on Vercel.',
-    link: {
-      href: 'https://www.cindyorangis.com/',
-      label: 'cindyorangis.com',
-    },
+      'A self-hosted Ghost blog deployed on AWS EC2, with CloudFront as the CDN, SSL via AWS Certificate Manager, and DNS managed through Namecheap. Infrastructure provisioned with Terraform. Set up entirely from the command line — no managed hosting, no control panel. Features original short stories and an interactive math game.',
+    tags: [
+      'Ghost CMS',
+      'AWS EC2',
+      'CloudFront',
+      'ACM',
+      'Terraform',
+      'Ubuntu',
+      'Linux',
+      'Namecheap',
+    ],
+    status: 'Live',
+    link: { href: 'https://myaorangis.com/', label: 'myaorangis.com' },
     gitHubUrl: {
-      href: 'https://github.com/cindyorangis/cindyorangis',
+      href: 'https://github.com/cindyorangis/myaorangis',
       label: 'github.com',
     },
-    logo: logoAnimaginary,
+    logo: logoHelioStream,
   },
   {
     name: 'SnowPro Services',
     description:
-      'A full-service snow removal business web application built for real operations — with a marketing site, client portal, admin dashboard, and crew portal. Architected as a Turborepo monorepo with separate Next.js apps per subdomain, deployed on Vercel.',
+      'A production-architected web application for a snow removal business — built as a Turborepo monorepo with four separate Next.js apps (marketing site, client portal, admin dashboard, crew portal), each deployed to its own subdomain on Vercel. CI/CD via GitHub Actions with Vercel auto-deploy on merge. Currently in active development.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Turborepo',
+      'GitHub Actions',
+      'Vercel',
+    ],
+    status: 'In Development',
     link: {
       href: 'https://snowpro-one.vercel.app/',
       label: 'snowpro-one.vercel.app',
@@ -37,15 +54,28 @@ const projects = [
     logo: logoPlanetaria,
   },
   {
-    name: "Mya's Short Stories",
+    name: 'Personal Resume Website',
     description:
-      'A self-hosted Ghost blog running on Ubuntu, set up from the command line. Features original short stories and an interactive math game — built for a Grade 4 writer.',
-    link: { href: 'https://myaorangis.com/', label: 'myaorangis.com' },
+      'My personal portfolio, built from scratch with a focus on production-grade practices — TypeScript strict mode, ESLint, Prettier, and Husky pre-commit hooks enforcing code quality before every push. Deployed on Vercel with automatic preview deployments per branch.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'ESLint',
+      'Prettier',
+      'Husky',
+      'Vercel',
+    ],
+    status: 'Live',
+    link: {
+      href: 'https://www.cindyorangis.com/',
+      label: 'cindyorangis.com',
+    },
     gitHubUrl: {
-      href: 'https://github.com/cindyorangis/myaorangis',
+      href: 'https://github.com/cindyorangis/cindyorangis',
       label: 'github.com',
     },
-    logo: logoHelioStream,
+    logo: logoAnimaginary,
   },
 ]
 
@@ -75,7 +105,7 @@ function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Things I&apos;ve made trying to put my dent in the universe.',
 }
 
 export default function Projects() {
@@ -90,18 +120,24 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
+            <div className="flex w-full items-start justify-between">
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-8 w-8"
+                  unoptimized
+                />
+              </div>
+              <StatusBadge status={project.status} />
             </div>
+
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               {project.name}
             </h2>
             <Card.Description>{project.description}</Card.Description>
+
+            <TagList tags={project.tags} />
 
             <div className="relative z-10 mt-6 flex gap-4">
               <a
