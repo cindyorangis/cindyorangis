@@ -8,11 +8,6 @@ import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoExamPro from '@/images/logos/exampro.jpg'
 import logoElectionsCanada from '@/images/logos/elections-canada.jpg'
 import logoElectionsOntario from '@/images/logos/elections-ontario.jpg'
-import image1 from '@/images/photos/mwangi-gatheca-qlKaN7eqay8-unsplash.jpg'
-import image2 from '@/images/photos/yulia-matvienko-PW9UT4SUibg-unsplash.jpg'
-import image3 from '@/images/photos/marcin-skalij-u_KQbigI68g-unsplash.jpg'
-import image4 from '@/images/photos/juan-rojas-3AFI3aQxdu4-unsplash.jpg'
-import image5 from '@/images/photos/marcin-skalij-9UwoKTFOSxY-unsplash.jpg'
 import cert1 from '@/images/certs/az-900-badge.png'
 import cert2 from '@/images/certs/aws-dva-badge.png'
 import cert3 from '@/images/certs/aws-ccp-badge.png'
@@ -261,7 +256,7 @@ function Resume() {
 
 const skills = {
   Cloud: ['AWS', 'Microsoft Azure'],
-  Frontend: [
+  Development: [
     'React',
     'Next.js',
     'TypeScript',
@@ -269,6 +264,7 @@ const skills = {
     'HTML',
     'CSS',
     'JavaScript',
+    'Python',
   ],
   'DevOps And Tooling': [
     'Git',
@@ -276,95 +272,9 @@ const skills = {
     'Docker',
     'Terraform (in progress)',
     'Vercel',
-    'ESLint',
-    'Prettier',
     'Zendesk',
     'Jira',
   ],
-  'Operating Systems': ['Windows 10', 'Windows 11', 'macOS', 'iOS', 'Android'],
-  'Hardware And Devices': [
-    'PCs',
-    'Laptops',
-    'Printers',
-    'Mobile devices',
-    'AV equipment',
-    'Election technology',
-  ],
-
-  'Service Desk': [
-    'SLA management',
-    'Incident management',
-    'Escalation workflows',
-    'Knowledge base creation',
-  ],
-}
-
-const photos = [
-  {
-    src: image1,
-    name: 'image1',
-    alt: 'Photo by Mwangi Gatheca on Unsplash',
-  },
-  {
-    src: image2,
-    name: 'image2',
-    alt: 'Photo by Yulia Matvienko on Unsplash',
-  },
-  {
-    src: image3,
-    name: 'image3',
-    alt: 'Photo by Marcin Skalij on Unsplash',
-  },
-  {
-    src: image4,
-    name: 'image4',
-    alt: 'Photo by Juan Rojas on Unsplash',
-  },
-  {
-    src: image5,
-    name: 'image5',
-    alt: 'Photo by Marcin Skalij on Unsplash',
-  },
-]
-
-function Photos() {
-  const rotations = [
-    'rotate-2',
-    '-rotate-2',
-    'rotate-2',
-    'rotate-2',
-    '-rotate-2',
-  ]
-
-  const uniquePhotos = Array.from(
-    new Map(photos.map((p) => [p.src, p])).values()
-  )
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {uniquePhotos.map((photo, photoIndex) => (
-          <div
-            key={photo.name}
-            className={clsx(
-              'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[photoIndex % rotations.length]
-            )}
-          >
-            <div className="aspect-9/10">
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes="(min-width: 640px) 18rem, 11rem"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
 }
 
 export default async function Home() {
@@ -432,9 +342,6 @@ export default async function Home() {
           ))}
         </div>
       </Container>
-      <div className="mt-18 md:mt-24">
-        <Photos />
-      </div>
     </>
   )
 }
