@@ -258,6 +258,7 @@ const skills = {
   Development: [
     'React',
     'Next.js',
+    'Vue.js',
     'TypeScript',
     'Tailwind CSS',
     'HTML',
@@ -266,7 +267,7 @@ const skills = {
     'Node.js',
     'Python',
   ],
-  Databases: ['MySQL', 'PostgreSQL'],
+  Databases: ['MySQL', 'PostgreSQL', 'Supabase'],
   'DevOps And Tooling': [
     'Git',
     'GitHub Actions (CI/CD)',
@@ -286,16 +287,15 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Cloud Engineer & Front End Developer
+            Cloud Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m a Toronto-based Cloud Engineer and Front End Developer with
-            5+ years of experience building and supporting cloud infrastructure
-            and production web applications. Currently at ExamPro, where I
-            contribute to a SaaS learning platform used by thousands of AWS and
-            Azure certification students. AWS Developer Associate and Azure
-            certified, with a front end stack built around Next.js, TypeScript,
-            and Tailwind CSS.
+            I&apos;m a Toronto-based Cloud Engineer with 5+ years of experience
+            building and supporting cloud infrastructure and production web
+            applications. Currently at ExamPro, where I contribute to a SaaS
+            learning platform used by thousands of AWS and Azure certification
+            students. AWS Developer Associate and Azure certified, with a front
+            end stack built around Next.js, TypeScript, and Tailwind CSS.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

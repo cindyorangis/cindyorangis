@@ -31,7 +31,7 @@ const projects = [
     logo: logoHelioStream,
   },
   {
-    name: 'SnowPro Services',
+    name: 'Snow Plow Services',
     description:
       'A production-architected web application for a snow removal business — built as a Turborepo monorepo with four separate Next.js apps (marketing site, client portal, admin dashboard, crew portal), each deployed to its own subdomain on Vercel. CI/CD via GitHub Actions with Vercel auto-deploy on merge. Currently in active development.',
     tags: [
@@ -44,11 +44,11 @@ const projects = [
     ],
     status: 'In Development',
     link: {
-      href: 'https://snowpro-one.vercel.app/',
-      label: 'snowpro-one.vercel.app',
+      href: 'https://snowplow-one.vercel.app/',
+      label: 'snowplow-one.vercel.app',
     },
     gitHubUrl: {
-      href: 'https://github.com/cindyorangis/snowpro',
+      href: 'https://github.com/cindyorangis/snowplow',
       label: 'github.com',
     },
     logo: logoPlanetaria,

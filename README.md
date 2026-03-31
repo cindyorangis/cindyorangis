@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 👩‍💻 About Me
 
-Cloud Engineer and Front End Developer with 5+ years of experience building and supporting cloud infrastructure and production web applications., working toward Terraform Associate 004 certification.
+Cloud Engineer with 5+ years of experience building and supporting cloud infrastructure and production web applications., working toward Terraform Associate 004 certification.
 
 📧 cindyorangis@gmail.com
 🔗 [linkedin.com/in/cindyorangis](https://linkedin.com/in/cindyorangis)

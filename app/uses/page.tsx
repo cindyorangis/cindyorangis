@@ -119,12 +119,12 @@ export default function Uses() {
             development and ops actually work together. Theory backed by
             real-world case studies.
           </Tool>
-          <Tool title="The Rise of Kyoshi by F.C. Yee">
-            Set centuries before the events of Avatar: The Last Airbender, this
-            novel follows Kyoshi&apos;s journey from uncertain origins to
-            becoming one of the most formidable Avatars in history. A great way
-            to revisit the world with fresh eyes — darker in tone and
-            surprisingly gripping.
+          <Tool title="The Shadow of Kyoshi by F.C. Yee">
+            Continuing Kyoshi&apos;s story, this sequel follows her struggle to
+            balance justice and mercy as political tensions rise across the
+            Earth Kingdom. Faced with powerful enemies and difficult choices,
+            Kyoshi must define what kind of Avatar she will become — intense,
+            emotional, and deeply compelling.
           </Tool>
         </ToolsSection>
       </div>
