@@ -3,8 +3,6 @@ import { type Metadata } from 'next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
-import '@/styles/tailwind.css'
-
 export const metadata: Metadata = {
   title: {
     template: '%s - Cindy Orangis',
@@ -13,6 +11,7 @@ export const metadata: Metadata = {
   description:
     'Toronto-based Cloud Engineer with 5+ years of experience on AWS and Azure. Building production infrastructure with Terraform, Docker, and Next.js.',
   alternates: {
+    canonical: 'https://www.cindyorangis.com',
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },

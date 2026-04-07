@@ -106,6 +106,9 @@ function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'Projects',
   description: 'Things I&apos;ve made trying to put my dent in the universe.',
+  alternates: {
+    canonical: 'https://www.cindyorangis.com/projects',
+  },
 }
 
 export default function Projects() {

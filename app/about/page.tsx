@@ -45,6 +45,9 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description: 'Cindy Orangis | Cloud Engineer',
+  alternates: {
+    canonical: 'https://www.cindyorangis.com/about',
+  },
 }
 
 export default function About() {
