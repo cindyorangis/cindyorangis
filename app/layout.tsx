@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     siteName: 'Cindy Orangis',
     type: 'website',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
