@@ -101,13 +101,17 @@ export default function Uses() {
             collaborating through a chaotic D&D-style adventure together that
             never gets old.
           </Tool>
-          <Tool title="Warhammer 40k: Dawn of War, Winter Assault">
-            The first expansion to Dawn of War, Winter Assault deepens the
-            battlefield with new units, mechanics, and the introduction of the
-            Imperial Guard. It features a dual-perspective campaign where you
-            can fight for Order or Chaos, adding replayability and narrative
-            variety. Expect larger-scale battles, more strategic depth, and even
-            more chaotic warfare.
+          <Tool title="Warhammer 40k: Dawn of War, Dark Crusade">
+            The second expansion to Dawn of War, Dark Crusade introduces a new
+            non-linear, risk-style planetary campaign set on the world of
+            Kronus. Players choose from multiple factions and compete for
+            territory on a strategic world map layered over traditional
+            real-time battles. Each faction features a unique stronghold mission
+            that must be conquered to eliminate enemies and unlock powerful
+            campaign abilities. With no fixed mission order and full planetary
+            conquest as the win condition, Dark Crusade adds replayability,
+            faction variety, and a deeper layer of strategic planning to the
+            Dawn of War experience.
           </Tool>
           <Tool title="Fire Emblem Fates: Conquest">
             A tactical RPG with punishing difficulty — every decision matters.
