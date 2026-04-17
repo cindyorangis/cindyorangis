@@ -254,30 +254,38 @@ function Resume() {
 }
 
 const skills = {
-  Cloud: ['AWS (EC2, S3, IAM, CloudFront)', 'Microsoft Azure'],
-  Development: [
-    'React',
-    'Next.js',
-    'Vue.js',
-    'TypeScript',
-    'Tailwind CSS',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Node.js',
-    'Python',
+  Cloud: [
+    'AWS (EC2, S3, IAM, CloudFront, Lambda)',
+    'Microsoft Azure',
+    'Terraform',
   ],
-  Databases: ['MySQL', 'PostgreSQL', 'Supabase'],
-  'DevOps And Tooling': [
-    'Git',
+  'AI & Data Engineering': [
+    'RAG Architecture',
+    'Vector Databases (pgvector)',
+    'LLM Orchestration (Groq, Llama)',
+    'Semantic Search',
+    'Embeddings',
+  ],
+  Development: [
+    'Python',
+    'FastAPI',
+    'TypeScript',
+    'Next.js',
+    'React',
+    'Node.js',
+    'Tailwind CSS',
+    'Vue.js',
+  ],
+  Databases: ['PostgreSQL', 'MySQL', 'Supabase'],
+  'DevOps & Tooling': [
     'GitHub Actions (CI/CD)',
     'Docker',
-    'Terraform',
-    'Vercel',
     'Linux',
     'Bash',
-    'Zendesk',
+    'Vercel',
+    'Git',
     'Jira',
+    'Zendesk',
   ],
 }
 
