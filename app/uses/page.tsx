@@ -126,12 +126,19 @@ export default function Uses() {
             development and ops actually work together. Theory backed by
             real-world case studies.
           </Tool>
-          <Tool title="The Shadow of Kyoshi by F.C. Yee">
-            Continuing Kyoshi&apos;s story, this sequel follows her struggle to
-            balance justice and mercy as political tensions rise across the
-            Earth Kingdom. Faced with powerful enemies and difficult choices,
-            Kyoshi must define what kind of Avatar she will become — intense,
-            emotional, and deeply compelling.
+          <Tool title="The Dawn of Yangchen by F.C. Yee">
+            Exploring the life of one of the most enigmatic Avatars, this book
+            delves into the political intrigue and moral complexities of
+            Yangchen&apos;s era. It&apos;s a fascinating look at a leader who
+            uses her wits and a vast spy network to maintain a fragile peace,
+            proving that diplomacy is often as powerful as bending.
+          </Tool>
+          <Tool title="Crucial Conversations by Joseph Grenny, et al.">
+            A game-changer for professional communication. This book provides a
+            practical framework for handling high-stakes discussions where
+            emotions run strong. It has been instrumental in helping me navigate
+            technical disagreements and collaborate more effectively across
+            cross-functional teams.
           </Tool>
         </ToolsSection>
       </div>

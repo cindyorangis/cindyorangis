@@ -6,6 +6,7 @@ import { StatusBadge, TagList } from '@/components/Status'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoCosmos from '@/images/logos/cosmos.svg'
 
 const projects = [
   {
@@ -76,6 +77,30 @@ const projects = [
       label: 'github.com',
     },
     logo: logoAnimaginary,
+  },
+  {
+    name: 'ServiceOntario RAG - Manual Search Engine',
+    description:
+      'Developed a self-hosted Retrieval-Augmented Generation (RAG) tool designed to eliminate manual PDF searching for ServiceOntario policy manuals. The system allows users to query dense administrative documents using natural language, providing accurate answers backed by specific page citations. By using local embeddings and a vector database, the tool ensures high precision and prevents LLM hallucinations.',
+    tags: [
+      'Next.js',
+      'Llama 3.3 (Groq)',
+      'Python',
+      'FastAPI',
+      'Supbase (PostgreSQL + pgvector)',
+      'Railway',
+      'Vercel',
+    ],
+    status: 'In Development',
+    link: {
+      href: 'https://rag-serviceontario.vercel.app/',
+      label: 'rag-serviceontario.vercel.app',
+    },
+    gitHubUrl: {
+      href: 'https://github.com/cindyorangis/rag-serviceontario',
+      label: 'github.com',
+    },
+    logo: logoCosmos,
   },
 ]
 
