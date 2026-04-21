@@ -45,8 +45,8 @@ const projects = [
     ],
     status: 'In Development',
     link: {
-      href: 'https://snowplow-one.vercel.app/',
-      label: 'snowplow-one.vercel.app',
+      href: 'https://snowplow.services',
+      label: 'snowplow.services',
     },
     gitHubUrl: {
       href: 'https://github.com/cindyorangis/snowplow',
@@ -79,7 +79,7 @@ const projects = [
     logo: logoAnimaginary,
   },
   {
-    name: 'ServiceOntario RAG - Manual Search Engine',
+    name: 'ServiceOntario Manual Search (RAG Assistant)',
     description:
       'Developed a self-hosted Retrieval-Augmented Generation (RAG) tool designed to eliminate manual PDF searching for ServiceOntario policy manuals. The system allows users to query dense administrative documents using natural language, providing accurate answers backed by specific page citations. By using local embeddings and a vector database, the tool ensures high precision and prevents LLM hallucinations.',
     tags: [
@@ -87,18 +87,18 @@ const projects = [
       'Llama 3.3 (Groq)',
       'Python',
       'FastAPI',
-      'Supbase (PostgreSQL + pgvector)',
+      'Supabase (PostgreSQL + pgvector)',
       'Railway',
       'Vercel',
     ],
     status: 'In Development',
     link: {
-      href: 'https://rag-serviceontario.vercel.app/',
-      label: 'rag-serviceontario.vercel.app',
+      href: 'https://so-rag.vercel.app',
+      label: 'so-rag.vercel.app',
     },
     gitHubUrl: {
-      href: 'https://github.com/cindyorangis/rag-serviceontario',
-      label: 'github.com',
+      href: 'https://github.com/cindyorangis/so-rag',
+      label: 'github.com/cindyorangis/so-rag',
     },
     logo: logoCosmos,
   },
