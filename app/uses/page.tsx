@@ -101,17 +101,18 @@ export default function Uses() {
             collaborating through a chaotic D&D-style adventure together that
             never gets old.
           </Tool>
-          <Tool title="Warhammer 40k: Dawn of War, Dark Crusade">
-            The second expansion to Dawn of War, Dark Crusade introduces a new
-            non-linear, risk-style planetary campaign set on the world of
-            Kronus. Players choose from multiple factions and compete for
-            territory on a strategic world map layered over traditional
-            real-time battles. Each faction features a unique stronghold mission
-            that must be conquered to eliminate enemies and unlock powerful
-            campaign abilities. With no fixed mission order and full planetary
-            conquest as the win condition, Dark Crusade adds replayability,
-            faction variety, and a deeper layer of strategic planning to the
-            Dawn of War experience.
+          <Tool title="Age of Mythology: Retold">
+            A definitive reimagining of the classic RTS, Age of Mythology:
+            Retold combines modern 4K visuals and updated mechanics with the
+            legendary god-tier strategy of the original. Players command the
+            forces of Greek, Egyptian, Norse, and Atlantean pantheons, calling
+            down devastating meteors or summoning mythic titans to crush their
+            foes. Retold introduces significant gameplay overhauls, including
+            reusable God Powers, a brand-new "Wonder Age," and an epic
+            50-mission campaign following the hero Arkantos. By blending
+            nostalgic storytelling with competitive modern features, it offers a
+            deep, visually stunning experience for both veterans and a new
+            generation of players.
           </Tool>
           <Tool title="Fire Emblem Fates: Conquest">
             A tactical RPG with punishing difficulty — every decision matters.
@@ -119,26 +120,14 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Books">
-          <Tool title="The DevOps Handbook by Gene Kim, Jez Humble, Patrick Debois, John Willis">
-            A foundational read for anyone serious about DevOps. It breaks down
-            the principles behind high-performing engineering teams — fast
-            deployments, continuous delivery, and building a culture where
-            development and ops actually work together. Theory backed by
-            real-world case studies.
-          </Tool>
-          <Tool title="The Dawn of Yangchen by F.C. Yee">
-            Exploring the life of one of the most enigmatic Avatars, this book
-            delves into the political intrigue and moral complexities of
-            Yangchen&apos;s era. It&apos;s a fascinating look at a leader who
-            uses her wits and a vast spy network to maintain a fragile peace,
-            proving that diplomacy is often as powerful as bending.
-          </Tool>
-          <Tool title="Crucial Conversations by Joseph Grenny, et al.">
-            A game-changer for professional communication. This book provides a
-            practical framework for handling high-stakes discussions where
-            emotions run strong. It has been instrumental in helping me navigate
-            technical disagreements and collaborate more effectively across
-            cross-functional teams.
+          <Tool title="Designing Data-Intensive Applications by Martin Kleppmann">
+            Widely regarded as the "Big Red Book" of backend engineering, this
+            is an essential masterclass in building scalable, reliable, and
+            maintainable systems. It bridges the gap between academic theory and
+            practical architecture, demystifying the trade-offs between storage
+            engines, data models, and distributed systems. It is the definitive
+            guide for any engineer looking to move beyond just "using tools" to
+            truly understanding how they work under the hood.
           </Tool>
         </ToolsSection>
       </div>
